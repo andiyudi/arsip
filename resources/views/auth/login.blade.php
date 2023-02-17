@@ -33,11 +33,11 @@
                 <img src="{{ asset('') }}assets/images/cmnplogo.png" alt="logo">
               </div>
               <h4>APLIKASI SIARSIP</h4>
-              <h6 class="fw-light">Silahkan Masukkan Email dan Password Anda</h6>
+              <h6 class="fw-light">Silahkan Masukkan Username dan Password Anda</h6>
               <form method="POST" action="{{ route('login') }}" class="pt-3">
                 @csrf
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" name="email" id="exampleInputEmail1" placeholder="Email">
+                  <input type="username" class="form-control form-control-lg" name="username" id="exampleInputUsername1" placeholder="Username">
                 </div>
                 <div class="form-group">
                   <input type="password" class="form-control form-control-lg" name="password" id="exampleInputPassword1" placeholder="Password">
