@@ -113,7 +113,8 @@ class ArsipController extends Controller
         $totalArsip = Arsip::count();
         $arsipKeluar = Arsip::where('m_k', 'Keluar')->count();
         $arsipMasuk = Arsip::where('m_k', 'Masuk')->count();
+        $arsipTable = Arsip::latest('id')->take(10)->get();
 
-        return view('pages.dashboard', compact('totalArsip', 'arsipKeluar', 'arsipMasuk'));
+        return view('pages.dashboard', compact('totalArsip', 'arsipKeluar', 'arsipMasuk', 'arsipTable'));
     }
 }

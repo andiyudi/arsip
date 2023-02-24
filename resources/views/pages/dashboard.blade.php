@@ -35,7 +35,38 @@
               </div>
             </div>
           </div>
-      </div>
+          <div class="card">
+            <div class="col-sm-12">
+              <div class="card-header mb-2">
+                Data 10 Arsip Terakhir
+              </div>
+              <div class="tabele-responsive">
+                <table class="table table-secondary table-striped table-hover table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">No.</th>
+                      <th scope="col">No. Arsip</th>
+                      <th scope="col">Bentuk Arsip</th>
+                      <th scope="col">Perkembangan</th>
+                      <th scope="col">Arsip Masuk/Keluar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    @foreach ($arsipTable as $key => $arsip)
+                        <tr>
+                            <td>{{ $key + 1  }}</td>
+                            <td>{{ $arsip->no_arsip }}</td>
+                            <td>{{ $arsip->bentuk_arsip }}</td>
+                            <td>{{ $arsip->perkembangan }}</td>
+                            <td>{{ $arsip->m_k }}</td>
+                        </tr>
+                    @endforeach
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
