@@ -211,7 +211,7 @@
                                     <label class="col-sm-3 col-form-label">PERKEMBANGAN</label>
                                     <div class="col-sm-9">
                                       <select class="form-control" name="perkembangan">
-                                        <option value=""></option>
+                                        <option value="-">-</option>
                                         <option value="Asli">Asli</option>
                                         <option value="Copy">Copy</option>
                                         <option value="Tembusan">Tembusan</option>
@@ -258,7 +258,7 @@
                                     <label class="col-sm-3 col-form-label">KETERANGAN</label>
                                     <div class="col-sm-9">
                                       <select class="form-control" name="keterangan">
-                                        <option value=""></option>
+                                        <option value="-">-</option>
                                         <option value="Simpan">Simpan</option>
                                         <option value="Permanen">Permanen</option>
                                       </select>

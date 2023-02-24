@@ -56,8 +56,9 @@ class ArsipController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($arsipId)
     {
+        $id = decrypt($arsipId);
         //get arsip by ID
         $arsip = Arsip::findOrFail($id);
 
@@ -71,8 +72,9 @@ class ArsipController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($arsipId)
     {
+        $id = decrypt($arsipId);
         //get arsip by ID
         $arsip = Arsip::findOrFail($id);
 

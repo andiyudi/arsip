@@ -34,11 +34,11 @@ return new class extends Migration
             $table->string('jumlah')->nullable();
             $table->date('s_d')->nullable();
             $table->string('no_box')->nullable();
-            $table->enum('perkembangan', ['', 'Asli', 'Copy', 'Tembusan'])->nullable();
+            $table->enum('perkembangan', ['-', 'Asli', 'Copy', 'Tembusan'])->nullable();
             $table->string('lokasi')->nullable();
             $table->date('retensi')->nullable();
             $table->date('gudang')->nullable();
-            $table->enum('keterangan', ['', 'Simpan', 'Permanen'])->nullable();
+            $table->enum('keterangan', ['-', 'Simpan', 'Permanen'])->nullable();
             $table->string('kelompok')->nullable();
             $table->string('proyek')->nullable();
             $table->string('indeks')->nullable();
